@@ -50,7 +50,7 @@ int gestPrecedent = -1;
 
 // Functie care incarca centroizii salvati anterior din Flash
 void incarcaCentroiziDinFlash() {
-  prefs.begin("neurogrip", true); // Deschide in mod Read-Only
+  prefs.begin("AXIS", true); // Deschide in mod Read-Only
   Serial.println("\n[Flash] Se incarca centroizii salvati...");
   
   bool totiIncarcati = true;
@@ -77,7 +77,7 @@ void incarcaCentroiziDinFlash() {
 
 // Functie care salveaza un centroid in Flash imediat dupa ce a fost primit
 void salveazaCentroidInFlash(int id) {
-  prefs.begin("neurogrip", false); // Open in Write mode
+  prefs.begin("AXIS", false); // Open in Write mode
   String cheie = "c_" + String(id);
   prefs.putBytes(cheie.c_str(), &centroizi[id], sizeof(Centroid));
   prefs.end();
@@ -86,7 +86,7 @@ void salveazaCentroidInFlash(int id) {
 
 void setup() {
   Serial.begin(115200);
-  SerialBT.begin("NeuroGrip_ESP32"); 
+  SerialBT.begin("AXIS"); 
 
   for(int i = 0; i < NUM_GESTURI; i++) {
     centroizi[i].nume = numeGesturi[i];
