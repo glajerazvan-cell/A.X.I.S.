@@ -5,7 +5,7 @@ Proiectul A.X.I.S. urmărește investigarea experimentală a semnalelor EMG și 
 
 ##  Structura Proiectului 
 *  `AXIS_main.cpp` - Singurul cod necesar pentru ESP32.
-*  `AXIS.zip` - Arhiva cu codul pentru Android Studio al aplicației de mobil.
+*  `AXIS_final.zip` - Arhiva cu codul pentru Android Studio al aplicației de mobil.
 *  `assembley.step` - Fișier CAD cu un deget mecatronic
 ---
 
@@ -26,7 +26,7 @@ Proiectul A.X.I.S. urmărește investigarea experimentală a semnalelor EMG și 
 ##  Pașii de Lucru 
   1. Se descarcă `AXIS_main.cpp` pentru EPS32.
 ---
-  2. Se descarcă și se deschide `AXIS.zip` folosind Android Studio.
+  2. Se descarcă și se deschide `AXIS_final.zip` folosind Android Studio.
 ---
   4. După ce se instalează aplicația pe telefon, se urmează pașii de pe ecran.
 ---
